@@ -1,0 +1,14 @@
+.landing {
+    height: 100%;
+    width: 100%;
+    background-color: #274e9B;
+}
+
+.landing h1 {
+    margin: 0;
+}
+
+.codenationLogo, .signIn {
+    display: flex;
+    justify-content: center;
+}

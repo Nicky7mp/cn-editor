@@ -2,27 +2,28 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 import * as ROUTES from '../../constants/routes';
+import '../Navigation/navigation.css';
 
 const Navigation = () => (
-    <div>
-        <ul>
-            <li>
-                <Link to={ROUTES.SIGN_IN}>Sign In</Link>
+    <div className="navigation">
+        <ul className="links">
+            <li id="signIn">
+                <Link to={ROUTES.SIGN_IN}><p>Sign In</p></Link>
             </li>
-            <li>
-                <Link to={ROUTES.LANDING}>Landing</Link>
+            <li id="landing">
+                <Link to={ROUTES.LANDING}><p>Landing</p></Link>
             </li>
-            <li>
-                <Link to={ROUTES.HOME}>Home</Link>
+            <li id="home">
+                <Link to={ROUTES.HOME}><p>Home</p></Link>
             </li>
-            <li>
-                <Link to={ROUTES.CODE_EDITOR}>Code Editor</Link>
+            <li id="codeEditor">
+                <Link to={ROUTES.CODE_EDITOR}><p>Code Editor</p></Link>
             </li>
-            <li>
-                <Link to={ROUTES.ACCOUNT}>Account</Link>
+            <li id="account">
+                <Link to={ROUTES.ACCOUNT}><p>Account</p></Link>
             </li>
-            <li>
-                <Link to={ROUTES.ADMIN}>Admin</Link>
+            <li id="admin">
+                <Link to={ROUTES.ADMIN}><p>Admin</p></Link>
             </li>
         </ul>
     </div>
